@@ -1,0 +1,17 @@
+USE projetomod3;
+
+CREATE TABLE IF NOT EXISTS tb_Modulos (
+id_modulo INT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
+nome_modulo VARCHAR(80) NOT NULL, 
+conteudo VARCHAR(200) NOT NULL,
+skill VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS tb_Cursos (
+id_curso SMALLINT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
+nome_curso VARCHAR(100) NOT NULL, 
+carga_horaria INT NOT NULL,
+custo DECIMAL(6,2) NOT NULL,
+id_modulo INT,
+CONSTRAINT fk_modulos FOREIGN KEY (id_modulo) REFERENCES tb_modulos(id_modulo)
+);
