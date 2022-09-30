@@ -135,25 +135,25 @@ CONSTRAINT fk_FACILSOFT FOREIGN KEY (ID_FACILSOFT)REFERENCES facilitadores(ID_FA
 );
 
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (1,"2022/02/01","2022-08-20",10,12);
+values (1,"2022-02-01","2022-08-20",10,12);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (2,"2022/04/01","2022-10-30",11,13);
+values (2,"2022-04-01","2022-10-30",11,13);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (3,"2022/05/01","2022-11-03",14,12);
+values (3,"2022-05-01","2022-11-03",14,12);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (4,"2022/06/01","2022-12-01",15,13);
+values (4,"2022-06-01","2022-12-01",15,13);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (5,"2022/08/01","2023-02-05",10,13);
+values (5,"2022-08-01","2023-02-05",10,13);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (6,"2022/09/01","2023-04-08",11,12);
+values (6,"2022-09-01","2023-04-08",11,12);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (7,"2022/10/01","2023-06-20",14,12);
+values (7,"2022-10-01","2023-06-20",14,12);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (8,"2022/01/01","2022-06-20",15,13);
+values (8,"2022-01-01","2022-06-20",15,13);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (8,"2022/12/01","2023-05-07",10,13);
+values (8,"2022-12-01","2023-05-07",10,13);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (2,"2022/11/01","2023-04-20",15,13);
+values (2,"2022-11-01","2023-04-20",15,13);
 
 
 CREATE TABLE IF NOT EXISTS Avaliacao(
