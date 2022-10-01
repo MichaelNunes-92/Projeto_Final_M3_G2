@@ -101,25 +101,25 @@ INSERT INTO TB_MATRICULA
 	(ID_MATRICULA,ID_ALUNO, ID_CURSO, TURNO, ID_TURMA, ID_MODULO)
     VALUES
     (DEFAULT, 1, 1, 1, 1, 8),
-    (DEFAULT, 2, 8, 3, 10, 26),
-    (DEFAULT, 3, 7, 2, 9, 10),
-    (DEFAULT, 4, 8, 3, 10, 26),
-    (DEFAULT, 5, 6, 2, 2, 13),
-    (DEFAULT, 6, 5, 1, 1, 9),
-    (DEFAULT, 7, 8, 3, 10, 23),
+    (DEFAULT, 2, 2, 3, 10, 26),
+    (DEFAULT, 3, 1, 2, 9, 10),
+    (DEFAULT, 4, 1, 3, 10, 26),
+    (DEFAULT, 5, 2, 2, 2, 13),
+    (DEFAULT, 6, 1, 1, 1, 9),
+    (DEFAULT, 7, 1, 3, 10, 23),
     (DEFAULT, 8, 2, 3, 6, 18),
-    (DEFAULT, 9, 3, 1, 3, 15),
+    (DEFAULT, 9, 1, 1, 3, 15),
     (DEFAULT, 10, 2, 2, 6, 20),
-    (DEFAULT, 11, 4, 2, 5, 18),
+    (DEFAULT, 11, 1, 2, 5, 18),
     (DEFAULT, 12, 2, 1, 6, 18),
-    (DEFAULT, 13, 4, 3, 5, 20),
-    (DEFAULT, 14, 3, 2, 2, 18),
-    (DEFAULT, 15, 4, 1, 2, 18),
-    (DEFAULT, 16, 3, 2, 6, 15),
-    (DEFAULT, 17, 6, 1, 6, 13),
-    (DEFAULT, 18, 7, 2, 6, 11),
-    (DEFAULT, 19, 8, 1, 2, 18),
-    (DEFAULT, 20, 7, 2, 6, 11);
+    (DEFAULT, 13, 1, 3, 5, 20),
+    (DEFAULT, 14, 1, 2, 2, 18),
+    (DEFAULT, 15, 1, 1, 2, 18),
+    (DEFAULT, 16, 1, 2, 6, 15),
+    (DEFAULT, 17, 1, 1, 6, 13),
+    (DEFAULT, 18, 1, 2, 6, 11),
+    (DEFAULT, 19, 1, 1, 2, 18),
+    (DEFAULT, 20, 1, 2, 6, 11);
     
     
 CREATE TABLE IF NOT EXISTS Turma(
@@ -135,25 +135,25 @@ CONSTRAINT fk_FACILSOFT FOREIGN KEY (ID_FACILSOFT)REFERENCES facilitadores(ID_FA
 );
 
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (1,"2022-02-01","2022-08-20",10,12);
+values (1,"2022/02/01","2022-08-20",1,3);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (2,"2022-04-01","2022-10-30",11,13);
+values (2,"2022/04/01","2022-10-30",2,4);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (3,"2022-05-01","2022-11-03",14,12);
+values (1,"2022/05/01","2022-11-03",5,3);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (4,"2022-06-01","2022-12-01",15,13);
+values (1,"2022/06/01","2022-12-01",6,4);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (5,"2022-08-01","2023-02-05",10,13);
+values (2,"2022/08/01","2023-02-05",1,4);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (6,"2022-09-01","2023-04-08",11,12);
+values (1,"2022/09/01","2023-04-08",2,3);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (7,"2022-10-01","2023-06-20",14,12);
+values (1,"2022/10/01","2023-06-20",5,3);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (8,"2022-01-01","2022-06-20",15,13);
+values (2,"2022/01/01","2022-06-20",6,4);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (8,"2022-12-01","2023-05-07",10,13);
+values (1,"2022/12/01","2023-05-07",1,4);
 INSERT INTO Turma   (Id_Curso,Data_inicio,Data_Fim,ID_FACILTECH,ID_FACILSOFT)
-values (2,"2022-11-01","2023-04-20",15,13);
+values (1,"2022/11/01","2023-04-20",6,4);
 
 
 CREATE TABLE IF NOT EXISTS Avaliacao(
@@ -223,92 +223,81 @@ VALUES (1, 13.500, 'A VISTA'),
 (1, 13.500, 'BOLETO'),
 (2, 15.000, 'A VISTA'),
 (2, 15.000, 'CARTAO DE CREDITO'),
-(2, 15.000, 'BOLETO'),
-(3, 17.000, 'A VISTA'),
-(3, 17.000, 'CARTAO DE CREDITO'),
-(3, 17.000, 'BOLETO'),
-(4, 15.700, 'A VISTA'),
-(4, 15.700, 'CARTAO DE CREDITO'),
-(4, 15.700, 'BOLETO'),
-(5, 19.000, 'A VISTA'),
-(5, 19.000, 'CARTAO DE CREDITO'),
-(5, 19.000, 'BOLETO'),
-(6, 18.600, 'A VISTA'),
-(6, 18.600, 'CARTAO DE CREDITO'),
-(6, 18.600, 'BOLETO'),
-(7, 16.900, 'A VISTA'),
-(7, 16.900, 'CARTAO DE CREDITO'),
-(7, 16.900, 'BOLETO'),
-(8, 17.300, 'A VISTA'),
-(8, 17.300, 'CARTAO DE CREDITO'),
-(8, 17.300, 'BOLETO');
+(2, 15.000, 'BOLETO');
 
 CREATE TABLE IF NOT EXISTS tb_Modulos (
 id_modulo int  PRIMARY KEY AUTO_INCREMENT , 
 nome_modulo VARCHAR(80) NOT NULL, 
 conteudo VARCHAR(200) NOT NULL,
-skill VARCHAR(30) NOT NULL
+skill VARCHAR(30) NOT NULL,
+id_curso INT NOT NULL,
+CONSTRAINT FOREIGN KEY (ID_MODULO)REFERENCES tb_cursos(id_curso)
 );
 INSERT INTO tb_Modulos
-	(id_modulo, nome_modulo, conteudo, skill)
+	(id_modulo, nome_modulo, conteudo, skill, id_curso)
 VALUES
-	(DEFAULT,"MODULO 1", "Aprender a aprender", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 1", "Gestão de tempo", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 1", "Autoconhecimento e carreira", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 1", "Pensamento computacional e algorítmico", "HARD SKILLS"),
-    (DEFAULT,"MODULO 1", "Lógica de programação para interagir com estruturas de dados", "HARD SKILLS"),
-    (DEFAULT,"MODULO 1", "Introdução à prototipagem", "HARD SKILLS"),
-    (DEFAULT,"MODULO 2", "Visão de negócios", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 2", "Criatividade", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 2", "Autoconhecimento e carreira", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 2", "Business Process e Regras de Negócio", "HARD SKILLS"),
-    (DEFAULT,"MODULO 2", "Levantamento de Requisitos", "HARD SKILLS"),
-    (DEFAULT,"MODULO 2", "Estruturas de dados", "HARD SKILLS"),
-    (DEFAULT,"MODULO 2", "Orientação a objetos", "HARD SKILLS"), 
-    (DEFAULT,"MODULO 3", "Capacidade investigativa", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 3", "Análise de dados", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 3", "Banco de dados relacionais", "HARD SKILLS"),
-    (DEFAULT,"MODULO 3", "Banco de dados não-relacionais", "HARD SKILLS"),
-    (DEFAULT,"MODULO 3", "Consultas a Bancos de dados", "HARD SKILLS"),
-    (DEFAULT,"MODULO 3", "CRUD com SQL", "HARD SKILLS"),
-    (DEFAULT,"MODULO 4", "Inteligência Emocional", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 4", "Gestão de conflitos", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 4", "Relacionamento interpessoal", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 4", "Trabalho em equipe", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 4", "Comunicação", "SOFT SKILLS"),
-    (DEFAULT,"MODULO 4", "Testes e Automatizações", "HARD SKILLS"),
-    (DEFAULT,"MODULO 4", "Publicação e ferramentas de monitoramento", "HARD SKILLS");
+	(DEFAULT,"MODULO 1", "Aprender a aprender", "SOFT SKILLS","1"),
+    (DEFAULT,"MODULO 1", "Gestão de tempo", "SOFT SKILLS", "1"),
+    (DEFAULT,"MODULO 1", "Autoconhecimento e carreira", "SOFT SKILLS", "1"),
+    (DEFAULT,"MODULO 1", "Pensamento computacional e algorítmico", "HARD SKILLS", "1"),
+    (DEFAULT,"MODULO 1", "Lógica de programação para interagir com estruturas de dados", "HARD SKILLS", "1"),
+    (DEFAULT,"MODULO 1", "Introdução à prototipagem", "HARD SKILLS", "1"),
+    (DEFAULT,"MODULO 2", "Visão de negócios", "SOFT SKILLS", "1"),
+    (DEFAULT,"MODULO 2", "Criatividade", "SOFT SKILLS", "1"),
+    (DEFAULT,"MODULO 2", "Autoconhecimento e carreira", "SOFT SKILLS", "1"),
+    (DEFAULT,"MODULO 2", "Business Process e Regras de Negócio", "HARD SKILLS", "1"),
+    (DEFAULT,"MODULO 2", "Levantamento de Requisitos", "HARD SKILLS", "1"),
+    (DEFAULT,"MODULO 2", "Estruturas de dados", "HARD SKILLS", "1"),
+    (DEFAULT,"MODULO 2", "Orientação a objetos", "HARD SKILLS", "1"), 
+    (DEFAULT,"MODULO 3", "Capacidade investigativa", "SOFT SKILLS", "2"),
+    (DEFAULT,"MODULO 3", "Análise de dados", "SOFT SKILLS", "2"),
+    (DEFAULT,"MODULO 3", "Banco de dados relacionais", "HARD SKILLS", "2"),
+    (DEFAULT,"MODULO 3", "Banco de dados não-relacionais", "HARD SKILLS", "2"),
+    (DEFAULT,"MODULO 3", "Consultas a Bancos de dados", "HARD SKILLS", "2"),
+    (DEFAULT,"MODULO 3", "CRUD com SQL", "HARD SKILLS", "2"),
+    (DEFAULT,"MODULO 4", "Inteligência Emocional", "SOFT SKILLS", "2"),
+    (DEFAULT,"MODULO 4", "Gestão de conflitos", "SOFT SKILLS", "2"),
+    (DEFAULT,"MODULO 4", "Relacionamento interpessoal", "SOFT SKILLS", "2"),
+    (DEFAULT,"MODULO 4", "Trabalho em equipe", "SOFT SKILLS", "2"),
+    (DEFAULT,"MODULO 4", "Comunicação", "SOFT SKILLS", "2"),
+    (DEFAULT,"MODULO 4", "Testes e Automatizações", "HARD SKILLS", "2"),
+    (DEFAULT,"MODULO 4", "Publicação e ferramentas de monitoramento", "HARD SKILLS", "2");
     
 CREATE TABLE IF NOT EXISTS tb_Cursos (
-id_curso INT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
+id_curso INT PRIMARY KEY NOT NULL, 
 nome_curso VARCHAR(100) NOT NULL, 
 carga_horaria INT NOT NULL,
-custo int NOT NULL,
-id_modulo INT,
-CONSTRAINT fk_modulos FOREIGN KEY (id_modulo) REFERENCES tb_modulos(id_modulo)
+custo int NOT NULL
 );
  INSERT INTO tb_Cursos
-	(nome_curso, carga_horaria, custo, id_modulo)
+	(id_curso, nome_curso, carga_horaria, custo)
 VALUES
-	("Formação WebDev Full Stack", 500, 12936.00, "1"),
-    ("Formação WebDev Full Stack", 500, 12936.00, "2"),
-    ("Formação WebDev Full Stack", 500, 12936.00, "3"),
-    ("Formação WebDev Full Stack", 500, 12936.00, "4"),
-    ("Formação em Data Analytics", 500, 12936.00, "1"),
-    ("Formação em Data Analytics", 500, 12936.00, "2"),
-    ("Formação em Data Analytics", 500, 12936.00, "3"),
-    ("Formação em Data Analytics", 500, 12936.00, "4");
-
+	("1", "Formação WebDev Full Stack", 500, 12936.00),
+    ("2", "Formação em Data Analytics", 500, 12936.00);
 
 SET FOREIGN_KEY_CHECKS=1;
 
+-- Qual turno há maior procura pelos cursos da Resilia?
+SELECT TURNO, COUNT(TURNO) FROM TB_MATRICULA GROUP BY TURNO ORDER BY TURNO;
+-- Qual o curso com maior/menor número de alunos cadastrados?
+SELECT 
+    TB_MATRICULA.ID_CURSO, tb_cursos.nome_curso, COUNT(TB_MATRICULA.ID_CURSO)
+FROM
+    TB_MATRICULA
+        INNER JOIN
+    tb_cursos ON TB_MATRICULA.ID_CURSO = tb_cursos.id_curso
+GROUP BY ID_CURSO
+ORDER BY ID_CURSO;
 
-
-
-
-
-
-
+-- Qual a idade média dos alunos?
+SELECT
+    (YEAR(FROM_DAYS(TO_DAYS(NOW())-TO_DAYS(data_nascimento_aluno)))) AS idade
+FROM
+    tb_alunos HAVING AVG(idade);
+    
+    
+    
+select * from tb_matricula;
 
 
 
